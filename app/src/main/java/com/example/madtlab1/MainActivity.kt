@@ -1,5 +1,6 @@
 package com.example.madtlab1
 
+import android.view.View
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
@@ -37,6 +38,11 @@ class MainActivity : AppCompatActivity() {
 
         buttonColor.setOnClickListener {
             textView.setTextColor(Color.RED)
+        }
+        val buttonBackground = findViewById<Button>(R.id.buttonBackground)
+
+        buttonBackground.setOnClickListener {
+            findViewById<View>(R.id.main).setBackgroundColor(Color.LTGRAY)
         }
     }
 }
