@@ -44,5 +44,6 @@ class MainActivity : AppCompatActivity() {
         buttonBackground.setOnClickListener {
             findViewById<View>(R.id.main).setBackgroundColor(Color.LTGRAY)
         }
+        //Code for revert
     }
 }
